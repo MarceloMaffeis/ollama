@@ -6,7 +6,7 @@ st.set_page_config(page_title="Chatbot Ollama", layout="centered")
 st.title("🤖 Chat com Ollama")
 
 # Define a URL do Ollama (pega dos secrets do Streamlit Cloud ou usa localhost)
-OLLAMA_BASE_URL = st.secrets.get("OLLAMA_BASE_URL", "http://localhost:11434")
+OLLAMA_BASE_URL = st.secrets.get("OLLAMA_BASE_URL", " http://127.0.0.1:4040")
 MODEL_NAME = "llama3.2"  # ou outro modelo instalado (mistral, qwen2.5, phi3, etc.)
 
 # Inicializa o histórico de mensagens
